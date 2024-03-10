@@ -1,4 +1,4 @@
-import CustomHead from '../components/CustomHead';
+import CustomHead from '../components/custom-head';
 import '../styles/globals.css';
 
 function MyApp({Component, pageProps}) {
