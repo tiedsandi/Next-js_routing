@@ -1,13 +1,15 @@
-import EventList from '../components/events/event-list';
+import {Fragment} from 'react';
+
 import {getFeaturedEvents} from '../dummy-data';
+import EventList from '../components/events/event-list';
 
 function HomePage() {
   const featuredEvents = getFeaturedEvents();
 
   return (
-    <div>
+    <Fragment>
       <EventList items={featuredEvents} />
-    </div>
+    </Fragment>
   );
 }
 
