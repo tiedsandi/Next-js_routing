@@ -11,7 +11,7 @@ function EventDetailPage() {
   const eventId = router.query.eventId;
   const event = getEventById(eventId);
 
-  if (!event) return <p>no Event Found!</p>;
+  if (!event || !event.isFeatured) return <p>no Event Found!</p>;
 
   return (
     <Fragment>
